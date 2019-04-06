@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "dog",
+    "description": "Dogs in training"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Name": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "Training Notes": {
+      "default": "",
+      "type": "text"
+    },
+    "user": {
+      "model": "user",
+      "via": "dogs",
+      "plugin": "users-permissions"
+    },
+    "Photo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

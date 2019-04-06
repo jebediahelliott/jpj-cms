@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "infopages",
+  "info": {
+    "name": "infopage",
+    "description": "Informational pages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Title": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "Content": {
+      "default": "",
+      "type": "text"
+    }
+  }
+}
